@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ['3.11', '3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install
+        run: python -m pip install -e ".[dev]"
+      - name: Format
+        run: python -m ruff format --check .
+      - name: Lint
+        run: python -m ruff check .
+      - name: Types
+        run: python -m mypy
+      - name: Offline tests
+        run: python -m pytest --cov=routewitness --cov-branch --cov-report=term --cov-report=xml
+      - name: Build
+        run: python -m build
+      - name: Install wheel and verify CLI
+        run: |
+          python -m pip install --force-reinstall --no-deps dist/routewitness-0.1.0-py3-none-any.whl
+          routewitness --help
+          routewitness --version
+          routewitness doctor --json
+          routewitness demo --data-dir ci-demo --json
+      - uses: actions/upload-artifact@v7
+        with:
+          name: package-${{ matrix.os }}-py${{ matrix.python }}
+          if-no-files-found: error
+          path: |
+            dist/*
+            coverage.xml

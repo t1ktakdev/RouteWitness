@@ -1,0 +1,508 @@
+{
+  "$defs": {
+    "Diagnosis": {
+      "additionalProperties": false,
+      "properties": {
+        "domain": {
+          "default": "insufficient-evidence",
+          "enum": [
+            "local-interface",
+            "local-link",
+            "gateway-or-router",
+            "dns",
+            "upstream-or-isp",
+            "remote-service",
+            "route-change",
+            "system-network-change",
+            "mixed",
+            "insufficient-evidence"
+          ],
+          "title": "Domain",
+          "type": "string"
+        },
+        "verdict": {
+          "default": "Evidence is insufficient to locate the failure.",
+          "title": "Verdict",
+          "type": "string"
+        },
+        "confidence": {
+          "default": "low",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Confidence",
+          "type": "string"
+        },
+        "evidence_for": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence For",
+          "type": "array"
+        },
+        "evidence_against": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Against",
+          "type": "array"
+        },
+        "unknowns": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unknowns",
+          "type": "array"
+        },
+        "recommended_next_checks": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Recommended Next Checks",
+          "type": "array"
+        }
+      },
+      "title": "Diagnosis",
+      "type": "object"
+    },
+    "Event": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "maxLength": 64,
+          "title": "Kind",
+          "type": "string"
+        },
+        "detail": {
+          "maxLength": 512,
+          "title": "Detail",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "detail"
+      ],
+      "title": "Event",
+      "type": "object"
+    },
+    "Network": {
+      "additionalProperties": false,
+      "properties": {
+        "interface": {
+          "anyOf": [
+            {
+              "maxLength": 256,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Interface"
+        },
+        "is_up": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Is Up"
+        },
+        "kind": {
+          "default": "unknown",
+          "title": "Kind",
+          "type": "string"
+        },
+        "addresses": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Addresses",
+          "type": "array"
+        },
+        "gateways": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 16,
+          "title": "Gateways",
+          "type": "array"
+        },
+        "routes": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Routes",
+          "type": "array"
+        },
+        "resolvers": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Resolvers",
+          "type": "array"
+        },
+        "gaps": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Gaps",
+          "type": "array"
+        }
+      },
+      "title": "Network",
+      "type": "object"
+    },
+    "PathObservation": {
+      "additionalProperties": false,
+      "properties": {
+        "phase": {
+          "enum": [
+            "baseline",
+            "start",
+            "during",
+            "recovery"
+          ],
+          "title": "Phase",
+          "type": "string"
+        },
+        "at": {
+          "format": "date-time",
+          "title": "At",
+          "type": "string"
+        },
+        "target": {
+          "title": "Target",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "ok",
+            "fail",
+            "unknown"
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "hops": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Hops",
+          "type": "array"
+        },
+        "detail": {
+          "default": "",
+          "maxLength": 256,
+          "title": "Detail",
+          "type": "string"
+        }
+      },
+      "required": [
+        "phase",
+        "at",
+        "target",
+        "state"
+      ],
+      "title": "PathObservation",
+      "type": "object"
+    },
+    "Probe": {
+      "additionalProperties": false,
+      "properties": {
+        "layer": {
+          "enum": [
+            "gateway",
+            "internet",
+            "dns-system",
+            "dns-query",
+            "service"
+          ],
+          "title": "Layer",
+          "type": "string"
+        },
+        "target": {
+          "maxLength": 253,
+          "title": "Target",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "ok",
+            "fail",
+            "unknown"
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "method": {
+          "maxLength": 32,
+          "title": "Method",
+          "type": "string"
+        },
+        "family": {
+          "default": 0,
+          "enum": [
+            4,
+            6,
+            0
+          ],
+          "title": "Family",
+          "type": "integer"
+        },
+        "operator": {
+          "default": "",
+          "maxLength": 64,
+          "title": "Operator",
+          "type": "string"
+        },
+        "latency_ms": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Latency Ms"
+        },
+        "detail": {
+          "default": "",
+          "maxLength": 256,
+          "title": "Detail",
+          "type": "string"
+        },
+        "stage": {
+          "default": "",
+          "maxLength": 32,
+          "title": "Stage",
+          "type": "string"
+        }
+      },
+      "required": [
+        "layer",
+        "target",
+        "state",
+        "method"
+      ],
+      "title": "Probe",
+      "type": "object"
+    },
+    "Sample": {
+      "additionalProperties": false,
+      "properties": {
+        "seq": {
+          "minimum": 0,
+          "title": "Seq",
+          "type": "integer"
+        },
+        "at": {
+          "format": "date-time",
+          "title": "At",
+          "type": "string"
+        },
+        "elapsed": {
+          "minimum": 0,
+          "title": "Elapsed",
+          "type": "number"
+        },
+        "network": {
+          "$ref": "#/$defs/Network"
+        },
+        "probes": {
+          "items": {
+            "$ref": "#/$defs/Probe"
+          },
+          "maxItems": 64,
+          "title": "Probes",
+          "type": "array"
+        },
+        "events": {
+          "items": {
+            "$ref": "#/$defs/Event"
+          },
+          "maxItems": 16,
+          "title": "Events",
+          "type": "array"
+        },
+        "symptoms": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 16,
+          "title": "Symptoms",
+          "type": "array"
+        },
+        "baseline_ms": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Baseline Ms"
+        },
+        "latency_ms": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Latency Ms"
+        }
+      },
+      "required": [
+        "seq",
+        "at",
+        "elapsed",
+        "network"
+      ],
+      "title": "Sample",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "tool_version": {
+      "default": "0.1.0",
+      "title": "Tool Version",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^\\d{8}T\\d{6}Z-[a-f0-9]{8}$",
+      "title": "Id",
+      "type": "string"
+    },
+    "start": {
+      "format": "date-time",
+      "title": "Start",
+      "type": "string"
+    },
+    "detected": {
+      "format": "date-time",
+      "title": "Detected",
+      "type": "string"
+    },
+    "end": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "End"
+    },
+    "duration_s": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Duration S",
+      "type": "number"
+    },
+    "status": {
+      "enum": [
+        "recording",
+        "recovered",
+        "interrupted",
+        "continued",
+        "diagnosis"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "previous_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Previous Id"
+    },
+    "simulated": {
+      "default": false,
+      "title": "Simulated",
+      "type": "boolean"
+    },
+    "samples": {
+      "items": {
+        "$ref": "#/$defs/Sample"
+      },
+      "maxItems": 2048,
+      "minItems": 1,
+      "title": "Samples",
+      "type": "array"
+    },
+    "paths": {
+      "items": {
+        "$ref": "#/$defs/PathObservation"
+      },
+      "maxItems": 32,
+      "title": "Paths",
+      "type": "array"
+    },
+    "diagnosis": {
+      "$ref": "#/$defs/Diagnosis"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 64,
+      "title": "Warnings",
+      "type": "array"
+    },
+    "capability_gaps": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 64,
+      "title": "Capability Gaps",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "start",
+    "detected",
+    "status",
+    "samples"
+  ],
+  "title": "Incident",
+  "type": "object"
+}

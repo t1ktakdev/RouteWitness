@@ -1,0 +1,19 @@
+Incident 20260913T214324Z-00000018 [SIMULATED]
+
+Likely source: upstream-or-isp
+Confidence: high
+Evidence is most consistent with an upstream connectivity failure.
+
+Evidence
+  upstream-or-isp: 12/14 affected rounds; sample seq 24,25,26,27,28,29,30,31,32,33,34,35
+  Gateway reachable in 14/14 examined rounds.
+  Local interface reported up in 14/14 examined rounds.
+  cloudflare: 12/14 failed reachability rounds (86% probe loss).
+  google: 12/14 failed reachability rounds (86% probe loss).
+  quad9: 12/14 failed reachability rounds (86% probe loss).
+
+Duration: 14.0 s · recovered
+Recovered/end: 2026-09-13T21:43:36+00:00
+
+Unknowns
+  Single-host probes cannot prove ISP fault or exclude local filtering/VPN policy.

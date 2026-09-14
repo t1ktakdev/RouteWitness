@@ -1,0 +1,5606 @@
+{
+  "schema_version": 1,
+  "tool_version": "0.1.0",
+  "id": "20260913T214324Z-00000018",
+  "start": "2026-09-13T21:43:22Z",
+  "detected": "2026-09-13T21:43:24Z",
+  "end": "2026-09-13T21:43:36Z",
+  "duration_s": 14.0,
+  "status": "recovered",
+  "previous_id": null,
+  "simulated": true,
+  "samples": [
+    {
+      "seq": 0,
+      "at": "2026-09-13T21:43:00Z",
+      "elapsed": 0.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": null,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 1,
+      "at": "2026-09-13T21:43:01Z",
+      "elapsed": 1.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": null,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 2,
+      "at": "2026-09-13T21:43:02Z",
+      "elapsed": 2.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": null,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 3,
+      "at": "2026-09-13T21:43:03Z",
+      "elapsed": 3.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": null,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 4,
+      "at": "2026-09-13T21:43:04Z",
+      "elapsed": 4.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": null,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 5,
+      "at": "2026-09-13T21:43:05Z",
+      "elapsed": 5.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": null,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 6,
+      "at": "2026-09-13T21:43:06Z",
+      "elapsed": 6.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": null,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 7,
+      "at": "2026-09-13T21:43:07Z",
+      "elapsed": 7.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": null,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 8,
+      "at": "2026-09-13T21:43:08Z",
+      "elapsed": 8.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": null,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 9,
+      "at": "2026-09-13T21:43:09Z",
+      "elapsed": 9.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": null,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 10,
+      "at": "2026-09-13T21:43:10Z",
+      "elapsed": 10.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 11,
+      "at": "2026-09-13T21:43:11Z",
+      "elapsed": 11.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 12,
+      "at": "2026-09-13T21:43:12Z",
+      "elapsed": 12.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 13,
+      "at": "2026-09-13T21:43:13Z",
+      "elapsed": 13.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 14,
+      "at": "2026-09-13T21:43:14Z",
+      "elapsed": 14.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 15,
+      "at": "2026-09-13T21:43:15Z",
+      "elapsed": 15.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 16,
+      "at": "2026-09-13T21:43:16Z",
+      "elapsed": 16.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 17,
+      "at": "2026-09-13T21:43:17Z",
+      "elapsed": 17.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 18,
+      "at": "2026-09-13T21:43:18Z",
+      "elapsed": 18.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 19,
+      "at": "2026-09-13T21:43:19Z",
+      "elapsed": 19.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 20,
+      "at": "2026-09-13T21:43:20Z",
+      "elapsed": 20.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 184.0
+    },
+    {
+      "seq": 21,
+      "at": "2026-09-13T21:43:21Z",
+      "elapsed": 21.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 184.0
+    },
+    {
+      "seq": 22,
+      "at": "2026-09-13T21:43:22Z",
+      "elapsed": 22.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "latency-spike"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": 184.0
+    },
+    {
+      "seq": 23,
+      "at": "2026-09-13T21:43:23Z",
+      "elapsed": 23.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 184.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "latency-spike"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": 184.0
+    },
+    {
+      "seq": 24,
+      "at": "2026-09-13T21:43:24Z",
+      "elapsed": 24.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 25,
+      "at": "2026-09-13T21:43:25Z",
+      "elapsed": 25.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 26,
+      "at": "2026-09-13T21:43:26Z",
+      "elapsed": 26.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 27,
+      "at": "2026-09-13T21:43:27Z",
+      "elapsed": 27.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 28,
+      "at": "2026-09-13T21:43:28Z",
+      "elapsed": 28.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 29,
+      "at": "2026-09-13T21:43:29Z",
+      "elapsed": 29.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 30,
+      "at": "2026-09-13T21:43:30Z",
+      "elapsed": 30.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 31,
+      "at": "2026-09-13T21:43:31Z",
+      "elapsed": 31.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 32,
+      "at": "2026-09-13T21:43:32Z",
+      "elapsed": 32.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 33,
+      "at": "2026-09-13T21:43:33Z",
+      "elapsed": 33.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 34,
+      "at": "2026-09-13T21:43:34Z",
+      "elapsed": 34.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 35,
+      "at": "2026-09-13T21:43:35Z",
+      "elapsed": 35.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "fail",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "fail",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "fail",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1500.0,
+          "detail": "Probe failed or was unavailable.",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "fail",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": null,
+          "detail": "Probe failed or was unavailable.",
+          "stage": "tcp"
+        }
+      ],
+      "events": [],
+      "symptoms": [
+        "internet-loss"
+      ],
+      "baseline_ms": 37.0,
+      "latency_ms": null
+    },
+    {
+      "seq": 36,
+      "at": "2026-09-13T21:43:36Z",
+      "elapsed": 36.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 37,
+      "at": "2026-09-13T21:43:37Z",
+      "elapsed": 37.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 38,
+      "at": "2026-09-13T21:43:38Z",
+      "elapsed": 38.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 39,
+      "at": "2026-09-13T21:43:39Z",
+      "elapsed": 39.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 40,
+      "at": "2026-09-13T21:43:40Z",
+      "elapsed": 40.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 41,
+      "at": "2026-09-13T21:43:41Z",
+      "elapsed": 41.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    },
+    {
+      "seq": 42,
+      "at": "2026-09-13T21:43:42Z",
+      "elapsed": 42.0,
+      "network": {
+        "interface": "interface-1",
+        "is_up": true,
+        "kind": "wifi",
+        "addresses": [
+          "local-address-1"
+        ],
+        "gateways": [
+          "gateway-1"
+        ],
+        "routes": [
+          "route-1"
+        ],
+        "resolvers": [
+          "resolver-1"
+        ],
+        "gaps": []
+      },
+      "probes": [
+        {
+          "layer": "gateway",
+          "target": "gateway-1",
+          "state": "ok",
+          "method": "icmp",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 1.4,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "cloudflare-ipv4",
+          "state": "ok",
+          "method": "tcp/443",
+          "family": 4,
+          "operator": "cloudflare",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "google-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "google",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "internet",
+          "target": "quad9-ipv4",
+          "state": "ok",
+          "method": "tcp/53",
+          "family": 4,
+          "operator": "quad9",
+          "latency_ms": 37.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-system",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "dns-query",
+          "target": "hostname-2",
+          "state": "ok",
+          "method": "resolve",
+          "family": 4,
+          "operator": "",
+          "latency_ms": 12.0,
+          "detail": "",
+          "stage": ""
+        },
+        {
+          "layer": "service",
+          "target": "hostname-1",
+          "state": "ok",
+          "method": "https-head",
+          "family": 0,
+          "operator": "",
+          "latency_ms": 48.0,
+          "detail": "HTTP 200",
+          "stage": "http"
+        }
+      ],
+      "events": [],
+      "symptoms": [],
+      "baseline_ms": 37.0,
+      "latency_ms": 37.0
+    }
+  ],
+  "paths": [
+    {
+      "phase": "baseline",
+      "at": "2026-09-13T21:43:00Z",
+      "target": "path-target-1",
+      "state": "ok",
+      "hops": [
+        "hop-1",
+        "hop-2"
+      ],
+      "detail": "Hop silence does not prove forwarded packet loss."
+    },
+    {
+      "phase": "start",
+      "at": "2026-09-13T21:43:24Z",
+      "target": "path-target-1",
+      "state": "ok",
+      "hops": [
+        "hop-1",
+        "unanswered"
+      ],
+      "detail": "Hop silence does not prove forwarded packet loss."
+    },
+    {
+      "phase": "recovery",
+      "at": "2026-09-13T21:43:42Z",
+      "target": "path-target-1",
+      "state": "ok",
+      "hops": [
+        "hop-1",
+        "hop-2"
+      ],
+      "detail": "Hop silence does not prove forwarded packet loss."
+    }
+  ],
+  "diagnosis": {
+    "domain": "upstream-or-isp",
+    "verdict": "Evidence is most consistent with an upstream connectivity failure.",
+    "confidence": "high",
+    "evidence_for": [
+      "upstream-or-isp: 12/14 affected rounds; sample seq 24,25,26,27,28,29,30,31,32,33,34,35",
+      "Gateway reachable in 14/14 examined rounds.",
+      "Local interface reported up in 14/14 examined rounds.",
+      "cloudflare: 12/14 failed reachability rounds (86% probe loss).",
+      "google: 12/14 failed reachability rounds (86% probe loss).",
+      "quad9: 12/14 failed reachability rounds (86% probe loss)."
+    ],
+    "evidence_against": [
+      "A responding gateway argues against a complete local-link outage.",
+      "Independent IP successes argue against a continuous general Internet outage."
+    ],
+    "unknowns": [
+      "Single-host probes cannot prove ISP fault or exclude local filtering/VPN policy."
+    ],
+    "recommended_next_checks": [
+      "Compare the same time window from another device; ask the ISP to check its uplink logs."
+    ]
+  },
+  "warnings": [],
+  "capability_gaps": []
+}

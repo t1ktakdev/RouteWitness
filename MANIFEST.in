@@ -1,0 +1,4 @@
+include README.ru.md CONTRIBUTING.md SECURITY.md CHANGELOG.md
+recursive-include docs *.md *.html *.json *.csv *.txt
+recursive-include tests *.py
+recursive-include scripts *.py
