@@ -47,12 +47,14 @@ class Network(Model):
     gaps: list[str] = Field(default_factory=list, max_length=32)
 
     def identity(self) -> tuple[object, ...]:
+        # Raw routes are evidence, not stable network identity. Route tables can
+        # contain volatile metrics/entries, especially on Windows. Gateway or
+        # interface changes still produce a meaningful route/network change.
         return (
             self.interface,
             self.is_up,
             tuple(sorted(self.addresses)),
             tuple(sorted(self.gateways)),
-            tuple(sorted(self.routes)),
             tuple(sorted(self.resolvers)),
         )
 

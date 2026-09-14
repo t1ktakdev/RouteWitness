@@ -119,3 +119,22 @@ def test_wall_clock_backwards_is_a_gap():
     s.at -= timedelta(seconds=3)
     r.push(s)
     assert s.events[0].kind == "sampling-gap"
+
+
+def test_route_metadata_churn_does_not_create_incident():
+    r, _ = collect(["healthy"] * 5)
+    s = sample(5)
+    s.network.routes.append("203.0.113.0/24 via 192.168.1.254 dev Ethernet metric 999")
+    started, completed = r.push(s)
+    assert started is None
+    assert completed == []
+    assert not s.events
+
+
+def test_gateway_change_is_still_a_route_change():
+    r, _ = collect(["healthy"] * 5)
+    s = sample(5)
+    s.network.gateways = ["192.168.1.1"]
+    started, _ = r.push(s)
+    assert started is not None
+    assert s.events[0].kind == "route-change"
